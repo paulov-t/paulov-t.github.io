@@ -13,3 +13,14 @@
 ## FIFA 21 Career Mods
 - [Paulv2k4 21 Career Mod V2.4](https://www.mediafire.com/file/xmfbdfcjc44beq9/Paulv2k4_Career_Realism_Mod_-_V2.4.fbmod/file)
 
+# Escape from Tarkov
+``` This project is discontinued. Will be "Public Archive" for others to learn. ```
+
+## Offline only Emulated Account Server
+[Tarkov-Server](https://github.com/paulov-t/Tarkov-Server)
+
+## Emulated Launcher
+[Tarkov-Launcher](https://github.com/paulov-t/SIT.Tarkov.Launcher)
+
+## Offline Mode BepInEx Plugin
+[BepInEx Plugin](https://github.com/paulov-t/SIT.Tarkov.Core)
