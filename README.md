@@ -4,7 +4,7 @@
 
 ## FIFA 23 Editor Tool (WIP)
 An editor tool designed to work with FIFA 23 and below. This is work in progress and cannot mod FIFA 23 but can read most files. The FIFA 23 Editor can launch a locale.ini mod for gameplay modding.
-- [Frostbite Modding Tool](https://www.mediafire.com/file/12gqsz6f5jkh28v/FMT-v23.1.zip/file)
+- [Frostbite Modding Tool](https://www.mediafire.com/file/a4o12zgrznikrz9/FMT-v32.2.zip/file)
 
 ## FIFA 23 RDBM (fixed by me)
 I am not aware of any fixes supplied to RDBM at the moment, so here is a quicked hacked together version of RDBM that allows you to edit your FIFA 23 squad files. I also fixed the correct metadata and version of FIFA being selected.
