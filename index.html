@@ -13,181 +13,58 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Paulv2k4 Mods - Official Site">
     <meta property="og:description" content="Paulv2k4 Mods for the EA Sports FC FIFA series of games.">
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
 </head>
-<body>
-    <h1 style="text-align:center; font-size: 4.5rem;">Paulov | Paulv2k4</h1>
+<body ng-app="myApp">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#/!">Paulov</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#/!">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!FIFA">FIFA / FC / FMT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!TARKOV">Escape from Tarkov</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-  <div  class="container">
-    <div class="row">
-            <div class="card col-md-6">
-                <div class="card-body">
-                    <h3>
-                    <img alt="FC24 Icon" width="50" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/EA_FC24_Cover.jpg/270px-EA_FC24_Cover.jpg">
-                    FC24
-                    </h3>
-                    <h4>FC24 Editor Tool | Mod Manager</h4>
-                    <a href="https://github.com/paulov-t/FrostbiteModdingTool/releases" target="_blank">Frostbite Modding Tool download</a>
-                    <hr />
+      <br />
+    <main class="container-fluid">
+        <div ng-view></div>
+    </main>
+    <script>
+        var app = angular.module("myApp", ["ngRoute"]);
+        app.config(function($routeProvider) {
+        $routeProvider
+        .when("/", {
+            templateUrl : "main.html"
+        })
+        .when("/FIFA", {
+            templateUrl : "fifa.html"
+        })
+        .when("/TARKOV", {
+            templateUrl : "tarkov.html"
+        })
+        .when("/FMT", {
+            templateUrl : "fmt.html"
+        });
+        });
+    </script>
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
 
-                    <h4>FC24 23 Gameplay Mod</h4>
-                    <a href="https://www.mediafire.com/folder/7nptoksudyfsb/Gameplay" target="_blank">Paulv2k4 FC24 Gameplay Mods</a>
-                    <hr />
-
-                    <h4>FIFA 23 Career Mod</h4>
-                    <a href="https://www.mediafire.com/folder/dqeto40059ynf/Career" target="_blank">Paulv2k4 FC24 Career Mods</a>
-                    <hr />
-                </div>
-            </div>
-            <div class="card col-md-6">
-                <div class="card-body">
-                    <h3>
-                        <img width="50" src="https://web-store.escapefromtarkov.com/themes/eft/images/logo.png" alt="Escape from Tarkov Logo" />
-                        Escape from Tarkov
-                    </h3>
-                    <br>
-                    <h4>
-                        Stay In Tarkov
-                    </h4>
-                    <p> The largest ever mod that enabled Coop for Escape from Tarkov offline. This mod was written from scatch using a combination .NET, Typescript, Node & Reverse Engineering.  </p>
-                    <p> This mod had my heart and soul poured into it and after 2 years achieved it's goal at succesfully replicating Live experience. </p>
-                    <p> Learned a tremendous amount about <code>Open Source Project Management</code>, <code>Branching</code>, <code>GitHub Actions</code>, <code>Unity Game Engine</code> and <code>Game Networking</code>.</p>
-                    <p> This project is <code>open source</code> and actively forked by other groups. I left it on GitHub under the leadership of other great developers</p>
-                </div>
-            </div>
-        
-            <div class="card col-md-6">
-                <div class="card-body">
-                    <h3>
-                    <img alt="FIFA 23"  width="50" src="https://upload.wikimedia.org/wikipedia/en/a/a6/FIFA_23_Cover.jpg">
-                    FIFA 23
-                    </h3>
-                    <br>
-                    <code>This project is discontinued.</code>
-                    <h4>FIFA 23 Editor Tool | Mod Manager</h4>
-                    <a href="https://github.com/paulov-t/FrostbiteModdingTool/releases" target="_blank">Frostbite Modding Tool download</a>
-                    <hr />
-
-                    <h4>FIFA 23 Gameplay Mod</h4>
-                    <a href="https://www.mediafire.com/folder/7nptoksudyfsb/Gameplay" target="_blank">Paulv2k4 FIFA 23 Gameplay Mods</a>
-                    <hr />
-
-                    <h4>FIFA 23 Career Mod</h4>
-                    <a href="https://www.mediafire.com/folder/dqeto40059ynf/Career" target="_blank">Paulv2k4 FIFA 23 Career Mods</a>
-                    <hr />
-
-                    <h4>FIFA 23 RDBM (fixed by me)</h4>
-                    <a href="https://www.mediafire.com/file/bhirn4cp5s3tfa9/RDBM_FIFA23_Fixed_By_Paulv2k4.zip/file" target="_blank">RDBM 23</a>
-                </div>
-            </div>
-            <div class="card col-md-6">
-                <div class="card-body">
-                    <h3>
-                    <img  width="50" alt="FIFA 21" src="https://upload.wikimedia.org/wikipedia/en/b/bb/FIFA_21_Standard_Edition_Cover.jpg">
-                    FIFA 21</h3>
-                    <br>
-                    <code>This project is discontinued.</code>
-                    <h4>FIFA 21 Editor Tool</h4>
-                    <a href="https://www.mediafire.com/file/mb9fkiv6dyi3t28/FMT_-_v12.7.zip/file" target="_blank">Frostbite Modding Tool download</a>
-                    <hr />
-
-                    <h4>FIFA 21 Gameplay Mods</h4>
-                    <ul>
-                        <li>
-                            <a href="https://www.mediafire.com/file/9rjwc61oht9uby5/Paulv2k4_FIFA_21_Gameplay_Version_10_Alpha_2.zip/file" target="_blank">Paulv2k4 FIFA 21 Gameplay Mods V10 Alpha</a>
-                        </li>
-                        <li>
-                            <a href="https://www.mediafire.com/file/8z3gnun3x4t72b4/Paulv2k4_FIFA_21_Gameplay_Version_9_Alpha_18.zip/file" target="_blank">Paulv2k4 FIFA 21 Gameplay Mods V9</a>
-                        </li>
-                        <li>
-                            <a href="https://www.mediafire.com/folder/tq1vryqkmmwht/Gameplay" target="_blank">All Paulv2k4 FIFA 21 Gameplay Mods</a>
-                        </li>
-                    </ul>
-                    <hr />
-
-                    <h4>FIFA 21 Career Mod</h4>
-                    <ul>
-                        <li>
-                            <a href="https://www.mediafire.com/file/xmfbdfcjc44beq9/Paulv2k4_Career_Realism_Mod_-_V2.4.fbmod/file" target="_blank">Paulv2k4 FIFA 21 Career Mod v2.4</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <h3>
-                        <img alt="FIFA 20" width="50" src="https://www.fifauteam.com/wp-content/uploads/2019/06/A1967-6.jpg">
-                        FIFA 20
-                    </h3>
-                    <br>
-                    <code>This project is discontinued.</code>
-                    <h4>FIFA 20 Launcher</h4>
-                    <a href="https://github.com/CadeEvs/FrostyToolsuite/releases" target="_blank">Frosty Editor Toolsuite</a>
-                    <hr />
-
-                    <h4>FIFA 20 Gameplay Mods</h4>
-                    <ul>
-                        <li>
-                            <a href="https://www.mediafire.com/folder/krte5z85o2af0/Gameplay" target="_blank">All Paulv2k4 FIFA 20 Gameplay Mods</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <h3>
-                        <img alt="FIFA 19" width="50" src="https://upload.wikimedia.org/wikipedia/en/7/71/FIFA_19_cover.jpg">
-                        FIFA 19
-                    </h3>
-                    <br>
-                    <code>This project is discontinued.</code>
-                    <h4>FIFA 19 Launcher</h4>
-                    <a href="https://github.com/CadeEvs/FrostyToolsuite/releases" target="_blank">Frosty Editor Toolsuite</a>
-                    <hr />
-
-                    <h4>FIFA 19 Gameplay Mods</h4>
-                    <ul>
-                        <li>
-                            <a href="https://www.mediafire.com/folder/e0or89qgf7gi6/Gameplay" target="_blank">Paulv2k4 FIFA 19 Gameplay Mods</a>
-                        </li>
-                    </ul>
-                    <h4>FIFA 19 Career Mods</h4>
-                    <ul>
-                        <li>
-                            <a href="https://www.mediafire.com/folder/cam69oboitp0w/Career" target="_blank">Paulv2k4 FIFA 19 Career Mods</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card col-md-4">
-                <div class="card-body">
-                    <h3>
-                        <img alt="FIFA 18" width="50" src="https://upload.wikimedia.org/wikipedia/en/7/71/FIFA_19_cover.jpg">
-                        FIFA 18
-                    </h3>
-                    <br>
-                    <code>This project is discontinued.</code>
-                    <h4>FIFA 18 Launcher</h4>
-                    <a href="https://github.com/CadeEvs/FrostyToolsuite/releases" target="_blank">Frosty Editor Toolsuite</a>
-                    <hr />
-
-                    <h4>FIFA 18 Gameplay Mods</h4>
-                    <ul>
-                        <li>
-                            <a href="https://www.mediafire.com/folder/jsmpj8krsk7bz/Gameplay" target="_blank">Paulv2k4 FIFA 18 Gameplay Mods</a>
-                        </li>
-                    </ul>
-                    <h4>FIFA 18 Career Mods</h4>
-                    <ul>
-                        <li>
-                            <a href="https://www.mediafire.com/folder/nej7tzbb8zq3x/Career" target="_blank">Paulv2k4 FIFA 18 Career Mods</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
-    </div>
-</div>
 </body>
 </html>
