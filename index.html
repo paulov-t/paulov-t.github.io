@@ -16,6 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="src/lite-yt-embed.js"></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 </head>
 <body ng-app="myApp">
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -30,7 +31,10 @@
                 <a class="nav-link active" aria-current="page" href="#/!">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#!FIFA">FIFA / FC / FMT</a>
+                <a class="nav-link" href="#!FIFA">PaulV / Paulv2k4 / FIFA / FC25 Mods</a>
+              </li>
+              <li class="nav-item"></li>
+                <a class="nav-link" href="#!FMT">FMT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#!TARKOV">Escape from Tarkov</a>
@@ -54,11 +58,11 @@
         .when("/FIFA", {
             templateUrl : "fifa.html"
         })
+        .when("/FMT", {
+            templateUrl : "FMT.html"
+        })
         .when("/TARKOV", {
             templateUrl : "tarkov.html"
-        })
-        .when("/FMT", {
-            templateUrl : "fmt.html"
         });
         });
     </script>
