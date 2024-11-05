@@ -7,17 +7,18 @@
                 FMT - Frostbite Modding Tool
         </h3>
             <a href="https://github.com/FMTDev/FMT.Releases/releases" target="_blank">Frostbite Modding Tool download</a>
-            <hr />
-
-            <md-block src="https://github.com/FMTDev/FMT.Releases/blob/main/README.md"
-            rendered="rendered" >
-
-            </md-block>
+            <div ng-controller="FmtMarkdownController as markdownnnn">
+                <span>{{markdownnnn.marked}}</span>
+            </div>
             <hr>
-            <h4>How-To's</h4>
+            <h4>How-To and Tutorials</h4>
             <h5>How to install FC25 (or other games) mods using Frostbite Modding Tool (FMT)</h5>
             <lite-youtube videoid="Z-OLVsXOwyY"></lite-youtube>
 
+            <h5>How to make your own FC25 gameplay mods using Frostbite Modding Tool (FMT)</h5>
+            <h6>Introduction</h6>
+            <lite-youtube videoid="2r7jW2PU81M"></lite-youtube>
+            
         </div>
     </div>
 </div>
