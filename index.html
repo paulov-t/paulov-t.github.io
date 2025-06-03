@@ -18,6 +18,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
     <script src="src/lite-yt-embed.js"></script>
     <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+    }
+    header, footer {
+      background-color: #1a1a1a; 
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .video-frame {
+      margin-top: 1rem;
+      max-width: 100%;
+      aspect-ratio: 16/9;
+    }
+    .mod-section {
+      background: #1a1a1a;
+      margin: 2rem auto 2rem auto;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+  </style>
+
 </head>
 <body ng-app="myApp">
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
